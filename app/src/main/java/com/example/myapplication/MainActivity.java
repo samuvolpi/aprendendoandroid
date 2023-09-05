@@ -19,13 +19,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 //declarando
         Button btnMensagem = findViewById(R.id.btnMensagem);
         TextView txtMensagem = findViewById(R.id.txtMensagem);
         Button btnToast = findViewById(R.id.btnToast);
         Button btnDialog = findViewById(R.id.btnDialog);
-        Button btnEscreve=findViewById(R.id.btnEscreve);
-        EditText fldText = findViewById(R.id.fldTexto);
+        Button btnEscreve= findViewById(R.id.btnEscreve);
+        TextView fldTexto = findViewById(R.id.fldTexto);
+
 //abertura do app
         String Abertura = "Criar app android";
         txtMensagem.setText(Abertura);
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btnEscreve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               String textoEscrito = fldText.getText().toString().toUpperCase().trim();
+               String textoEscrito = fldTexto.getText().toString().toUpperCase().trim();
                txtMensagem.setText(textoEscrito);
             }
         });

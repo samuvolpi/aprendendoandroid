@@ -26,18 +26,6 @@
         tools:layout_editor_absoluteX="124dp"
         tools:layout_editor_absoluteY="214dp" />
 
-    <TextView
-        android:id="@+id/fldTexto"
-        android:layout_width="117dp"
-        android:layout_height="52dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMensagem"
-        app:layout_constraintVertical_bias="0.264" />
-
     <Button
         android:id="@+id/btnEscreve"
         android:layout_width="148dp"
@@ -63,5 +51,25 @@
         android:text="dialog"
         tools:layout_editor_absoluteX="298dp"
         tools:layout_editor_absoluteY="162dp" />
+
+    <EditText
+        android:id="@+id/fldTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="592dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
